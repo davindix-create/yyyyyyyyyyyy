@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>apologize</title>
+<style>
+body{
+  margin:0;
+  font-family:"Segoe UI",sans-serif;
+  background:linear-gradient(#87ceeb,#cfefff);
+  color:#1b2a3a;
+  overflow-x:hidden;
+}
+.section{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:80px 40px;
+}
+.cloud{
+  background:#ffffff;
+  padding:30px 40px;
+  border-radius:60px;
+  box-shadow:0 20px 40px rgba(0,0,0,0.15);
+}
+.row{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:60px;
+}
+.media{
+  width:280px;
+  border-radius:24px;
+  opacity:0;
+  transition:1s ease;
+}
+.text{
+  max-width:420px;
+  font-size:20px;
+  line-height:1.6;
+  opacity:0;
+  transition:1s ease;
+}
+.from-left{transform:translateX(-120px)}
+.from-right{transform:translateX(120px)}
+.row.show .media,.row.show .text{opacity:1;transform:translateX(0)}
+.fall{
+  position:fixed;
+  top:-30px;
+  font-size:22px;
+  animation:fall linear infinite;
+  pointer-events:none;
+}
+@keyframes fall{to{transform:translateY(110vh) rotate(360deg);opacity:0}}
+video{object-fit:cover}
+body{background:linear-gradient(135deg,#0b0014,#ff2f92);overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;background:radial-gradient(circle at 20% 30%,rgba(255,105,180,.18),transparent 40%),radial-gradient(circle at 80% 70%,rgba(0,180,255,.18),transparent 40%);pointer-events:none;z-index:-1}
+body::after{content:"";position:fixed;top:0;bottom:0;left:0;width:120px;background:linear-gradient(to right,rgba(255,47,146,.25),transparent);pointer-events:none;z-index:-1}
+
+.side-lines-left,.side-lines-right{position:fixed;top:0;bottom:0;width:140px;pointer-events:none;z-index:-1}
+.side-lines-left{left:0;background:repeating-linear-gradient(180deg,rgba(255,180,220,.15) 0,rgba(255,180,220,.15) 1px,transparent 1px,transparent 14px)}
+.side-lines-right{right:0;background:repeating-linear-gradient(180deg,rgba(180,220,255,.15) 0,rgba(180,220,255,.15) 1px,transparent 1px,transparent 14px)}
+.side-right{position:fixed;top:0;bottom:0;right:0;width:120px;background:linear-gradient(to left,rgba(0,180,255,.25),transparent);pointer-events:none;z-index:-1}
+.media,video{border-radius:18px;box-shadow:0 20px 40px rgba(0,0,0,.35);backdrop-filter:blur(4px)}
+.falling-emoji{color:#ff77b7;filter:drop-shadow(0 0 6px rgba(255,47,146,.6))}
+.float{position:fixed;width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.4);animation:drift 12s linear infinite}
+@keyframes drift{from{transform:translateY(100vh)}to{transform:translateY(-10vh)}}
+</style>
+</head>
+<body>
+
+<audio id="bgm" src="lagu.mp3" loop></audio>
+
+<section class="section">
+  <div class="row cloud" style="flex-direction:column;">
+    <div style="display:flex;gap:60px;">
+      <img src="foto6.jpg" class="media from-left">
+      <img src="foto7.jpg" class="media from-right">
+    </div>
+    <div class="text" style="font-size:34px;text-align:center;">sorry for all the mistakes I've ever made, I want to go back to our time together</div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="row cloud">
+    <img src="foto1.jpg" class="media from-left">
+    <div class="text from-right">⬇⬇⬇scroll down ⬇⬇⬇.</div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="row cloud">
+    <div class="text from-left">Take my hand.</div>
+    <video src="video1.mp4" class="media from-right" muted autoplay loop playsinline></video>
+  </div>
+</section>
+
+<section class="section">
+  <div class="row cloud">
+    <img src="foto2.jpg" class="media from-right">
+    <div class="text from-left">Take my whole life, too.</div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="row cloud">
+    <div class="text from-right">For I can't help.</div>
+    <video src="video2.mp4" class="media from-left" muted autoplay loop playsinline></video>
+  </div>
+</section>
+
+<section class="section">
+  <div class="row cloud">
+    <img src="foto3.jpg" class="media from-left">
+    <div class="text from-right">falling in love with you.</div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="row cloud">
+    <div class="text from-left">Aku gabakal mengulanginya lagi mup..</div>
+    <video src="video3.mp4" class="media from-right" muted autoplay loop playsinline></video>
+  </div>
+</section>
+
+<section class="section">
+  <div class="row cloud">
+    <img src="foto4.jpg" class="media from-right">
+    <div class="text from-left">Aku akan jujur dan transparansi akan segala hal.</div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="row cloud">
+    <div class="text from-right">Aku akan menjauhi hal yang kamu gasuka.</div>
+    <video src="video4.mp4" class="media from-left" muted autoplay loop playsinline></video>
+  </div>
+</section>
+
+<section class="section">
+  <div class="row cloud">
+    <img src="foto5.jpg" class="media from-left">
+    <div class="text from-right">sooo please give me a change .</div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="row cloud">
+    <div class="text from-left">Aku bakal buktiin dalam 1 minggu ini, semoga kamu mau menunggu nya dan akan kubuat ini tidak akan sia sia untuk di tunggu.</div>
+    <video src="video5.mp4" class="media from-right" muted autoplay loop playsinline></video>
+  </div>
+</section>
+
+<script>
+const blocks=document.querySelectorAll('.row');
+const bgm=document.getElementById('bgm');
+bgm.volume=0.25;
+let played=false;
+window.addEventListener('click',()=>{
+  if(!played){bgm.play();played=true}
+});
+window.addEventListener('scroll',()=>{
+  blocks.forEach((b,i)=>{
+    const top=b.getBoundingClientRect().top;
+    if(top<window.innerHeight*0.75){
+      setTimeout(()=>{
+        b.classList.add('show');
+        const vid=b.querySelector('video');
+        if(vid){vid.muted=false;vid.volume=0.7}
+      },i*300);
+    }
+  });
+});
+function spawn(){
+  const icons=['💙','☁️','💗','✨'];
+  const e=document.createElement('div');
+  e.className='fall';
+  e.textContent=icons[Math.floor(Math.random()*icons.length)];
+  e.style.left=Math.random()*100+'vw';
+  e.style.animationDuration=4+Math.random()*4+'s';
+  document.body.appendChild(e);
+  setTimeout(()=>e.remove(),8000);
+}
+setInterval(spawn,700);
+for(let i=0;i<20;i++){const d=document.createElement("div");d.className="float";d.style.left=Math.random()*100+"vw";d.style.animationDuration=8+Math.random()*10+"s";d.style.opacity=Math.random();document.body.appendChild(d)}
+</script>
+
+</body>
+</html>
